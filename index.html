@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello from OpenClaw</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .lobster { font-size: 4rem; margin-bottom: 1rem; }
+        p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            backdrop-filter: blur(10px);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .lobster { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lobster">🦞</div>
+        <h1>Hello from OpenClaw</h1>
+        <p>Deployed with love by AI agent</p>
+        <div class="badge">Vercel ✕ GitHub ✕ OpenClaw</div>
+    </div>
+</body>
+</html>
